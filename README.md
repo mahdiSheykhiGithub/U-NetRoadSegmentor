@@ -1,2 +1,10 @@
-# U-NetRoadSegmentor
-This repository features a deep learning project using a U-Net model for precise road and street segmentation from aerial imagery. It demonstrates U-Net's potential in mapping and traffic management applications.
+# مقدمه
+
+در این پروژه، هدف ما توسعه یک مدل یادگیری عمیق با استفاده از شبکه U-Net برای سگمنت‌کردن دقیق جاده‌ها و خیابان‌ها از تصاویر هوایی بوده است. استفاده از تصاویر هوایی در تحلیل‌های شهری و مدیریت ترافیک اهمیت زیادی دارد و توانایی تشخیص و بخش‌بندی مسیرها به‌طور خودکار می‌تواند فرآیندهای مختلف را بهبود بخشد.
+
+# دیتاست آموزش و تست مدل:
+
+برای آموزش و ارزیابی مدل، از DeepGlobe Road Extraction Dataset شامل 5600 تصویر هوایی و 5600 ماسک مرتبط استفاده شد. این تصاویر به سایز 256 در 256 پیکسل تبدیل شدند تا با ساختار شبکه سازگار باشند. شبکه U-Net طراحی شده برای این پروژه دارای بیش از 7 میلیون پارامتر بود که به آن امکان داد دقت بالایی در تشخیص مسیرها از تصاویر هوایی داشته باشد. 
+لینک یتاست : https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/data
+
+پس از مراحل آموزش، تابع خطا از نوع BinaryCrossentropy به مقدار 0.07 برای داده ای validation رسید، که نشان‌دهنده عملکرد مناسب مدل در بخش‌بندی جاده‌ها و خیابان‌ها است.
